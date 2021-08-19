@@ -1,0 +1,184 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+	<title>Feira de Piadas</title>
+
+	<style>
+		body{
+			text-align: center;
+			background-color: rgb(255,200,30);
+		}
+
+		#title1{
+			font-size: 40px;
+			padding: 20px;
+			font-family: Roboto;
+		}
+
+		#form1{
+
+		}
+
+		input{
+
+		}
+
+		#inputs{
+			display: inline-block;
+		}
+
+		.input{
+			display: block;
+			margin: 5px;
+			padding-right: 30px;
+			font-size: 15px;
+		}
+
+		#Btns{
+			padding-top: 20px;
+		}
+
+		button{
+			background-color: #FFA500;
+  			border: 1px solid #FFA500;
+			color: white;
+			padding: 5px 7px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 13px;
+			cursor: pointer;
+			border-radius: 3px;
+		}
+		button:hover{
+			background-color: #FF8C00;
+		}
+
+		#link2{
+			text-decoration: none;
+			color:  white;
+		}
+
+		h1{
+			font-size: 25px;
+		}
+
+		hr{
+			border-color: black;
+		}
+
+		#top_bar{
+			overflow: hidden;
+		}
+
+		#top_categorias: after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.coluna{
+			float: left;
+			width: 33.33%;
+		}
+
+		@media screen and (max-width:600px) {
+		  	.column {
+		    width: 100%;
+		  }
+		}
+
+		#search_container{
+			float: right;
+		}
+
+		#search_container button{
+			float: right;
+			padding: 6px 10px;
+			margin-top: 10px;
+			margin-right: 10px;
+			cursor: pointer;
+			border: none;
+			border-radius: 0px;
+		}
+
+		#icon_user{
+			font-size: 50px;
+			margin: 10px;
+			float: left;
+		}
+
+		#input_search{
+			padding: 6px;
+			margin-top: 10px;
+			font-size: 17px;
+			border: none;
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+
+		#div_publicar{
+			margin-top: 10px;
+			display: block;
+		}
+
+		#icon_user2{
+			font-size: 50px;
+			float: left;
+		}
+
+		#p_publicar{
+			float: left;
+			margin-left: 5px;
+			margin-top: 13px;
+		}
+
+		#btn_publicar{
+			margin-top: 40px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="top_bar">
+		<span id="icon_user" class="material-icons">person</span>
+
+		<div id="search_container">
+			<form id="form_search" action="/action_page.php">
+			    <input id="input_search" type="text" placeholder="Pesquisar..." name="search">
+			    <button><span id="icon_search" class="material-icons">search</span></button>
+		    </form>
+		</div>
+	</div>
+
+	<div id="top_categorias">
+		<div class="coluna">
+			<h1>Top Categorias</h1>
+		</div>
+
+		<div class="coluna">
+			<div id="div_publicar">
+				<span id="icon_user2" class="material-icons">account_circle</span>
+				<p id="p_publicar">O que há de engraçado?</p>
+				<button id="btn_publicar">Publicar</button>
+			</div>
+			<hr>
+		</div>
+
+		<div class="coluna">
+			<h1>Top Piadas</h1>
+		</div>
+	</div>
+
+</body>
+
+</html>
